@@ -1,0 +1,3 @@
+# Tcl Missing 'else' Condition Bug
+
+This repository demonstrates a common, subtle error in Tcl: omitting the 'else' clause in an 'if' statement when you intend to cover all cases.  The `bug.tcl` file contains a procedure that has a gap in its logic which leads to an unexpected outcome, and `bugSolution.tcl` demonstrates the corrected version.  The issue arises because, in Tcl, if none of the if/elseif clauses are met, the procedure simply returns without an explicit return value.
